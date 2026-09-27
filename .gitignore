@@ -1,24 +1,76 @@
+# =========================
+# Ambiente e segredos
+# =========================
 .env
-.DS_Store
-.runtime/
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# =========================
+# Node / Next.js (frontend)
+# =========================
+node_modules/
+.next/
+out/
+.vercel/
+.turbo/
+.swc/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Java / Maven (backend)
+# =========================
+target/
+.mvn/wrapper/maven-wrapper.jar
+*.class
+*.jar
+*.war
+*.ear
+*.log
+hs_err_pid*
+
+# =========================
+# Banco de dados (SQLite)
+# =========================
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+data/
+codebase/backend/data/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# IDEs
+# =========================
 .idea/
 .vscode/
-evidence/
-gen/output/
-gen/.venv/
-legacy/runner/.venv/
-legacy/processor/target/
-__pycache__/
-*.py[cod]
-*.log
-modern/.venv/
-modern/landing/
-modern/lakehouse/ducklake/
-modern/dbt/.user.yml
-ontology/output/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+.factorypath
 
-# agent tooling (local, not repo content)
-.agents/
-.claude/
-skills-lock.json
-*.egg-info/
+# =========================
+# Sistema operacional
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Build / coverage
+# =========================
+coverage/
+dist/
+build/
